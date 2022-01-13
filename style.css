@@ -1,8 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,80);
 *{
-    box-sizing: border-box;
-    margin: o;
-    padding: 0;
     Font-family: Montserrat;
 }
 
@@ -13,9 +10,8 @@
 
 
 .card_sign_in .form_card .E_h3 h3{
-    padding-left: 15%;
+    /* padding-left: 15%; */
     padding-top: 30px;
-    
     font-weight: 700;
     Font-style: Bold;
     Font-size: 32px;
