@@ -18,3 +18,52 @@
 
 }
 
+/* -----------------------------------
+ */
+ 
+ @import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,80);
+*{
+    /* box-sizing: border-box;
+    margin: o;
+    padding: 0; */
+    Font-family: Montserrat;
+}
+
+ .page_sign_in{
+    background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%); 
+}
+ .card_sign_in {border-radius: 10px; height:max-content;}
+ .card_sign_in .form_card .E_h3{
+    margin-left: 1px !important;
+
+
+}
+.card_sign_in .form_card .E_h3 span{
+   
+    border-left: 6px solid #00C1FE;
+
+}
+.card_sign_in .form_card .E_h3 h3{
+    padding-left: 15%;
+    padding-top: 30px;
+    font-weight: 700;
+    Font-style: Bold;
+    Font-size: 32px;
+}
+.p_signin{
+    Font-style: SemiBold;
+    Font-size: 22px;
+    font-weight: 700;
+    
+}
+.btn_signin{
+    background-color:#00C1FE !important;
+
+}
+.form_card div input placeholder{
+    font-size:4px !important;
+}
+/* ________________________ */
+
+
+
