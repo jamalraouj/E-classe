@@ -1,31 +1,4 @@
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,80);
-*{
-    Font-family: Montserrat;
-}
-
-.page_sign_in{
-    background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
-    
-}
-
-
-.card_sign_in .form_card .E_h3 h3{
-    /* padding-left: 15%;
-    padding-top: 30px;
-    font-weight: 700;
-    Font-style: Bold;
-    Font-size: 32px;
-
-}
-*/
-/* -----------------------------------
- */
  
  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,80);
 *{
@@ -93,7 +66,9 @@
     width:80%;
     left:10%;
 }
-
+.height_70{
+    height: 70px;
+}
 /* ________________________ */
 
 
