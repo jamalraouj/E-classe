@@ -67,8 +67,23 @@
     left:10%;
 }
 .height_70{
-    height: 70px;
+    /* height: 70px; */
 }
+.height_dash{
+    height:31.1rem;
+}
+.scroll_wdout_bar::-webkit-scrollbar{
+    width:7px;
+}
+.scroll_wdout_bar::-webkit-scrollbar-thumb{
+    background: rgb(86, 159, 255); 
+    border-radius: 10px;
+}
+@media  screen and (min-width:700px){
+    .sidebar{
+
+    }
+} 
 /* ________________________ */
 
 
