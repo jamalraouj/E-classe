@@ -12,106 +12,21 @@
 </head>
 
 <body>
-    <div class="container-fluid  vh-100" >
-        <div class="row flex-nowrap">
-            <div class="col-2 sidebar position-sticky" style="background-color:#FAFFC1">
-                <div
-                    class="d-flex flex-column align-items-center align-items-center px-3 pt-2 text-white min-vh-100 overflow-hidden">
-                    <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <h3 class="fs-5  d-sm-inline ps-3 font-weight-bolder  text-dark">E-classe</h3>
-                    </a>
-                    <div class="d-flex flex-column align-items-center align-items-center text-dark ">
-                        <img class="rounded-circle w-75" src="./img/youcode1.png" alt="photo">
-                        <p class=" h5 font-weight-bold pt-2 m-0">Admin name</p>
-                        <p class="pb-3 h5 font-weight-light fs-6 text-primary" href="#">Admin</p>
-                    </div>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-75 "
-                        id="menu">
-                        <li class="nav-item width_100prs text-sm-start">
-                            <a href="#" class="nav-link align-middle px-0">
-                                <i class="fa fa-home" aria-hidden="true"></i>
-                                <span class="text-dark ms-1 d-none d-sm-inline ps-2 ">Home</span>
-                            </a>
-                        </li>
-                        <li class="nav-item  width_100prs text-sm-start">
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
-                                <span class=" text-dark ms-1 d-none d-sm-inline ps-3">Course</span>
-                            </a>
-                        </li>
-                        <li class="width_100prs text-sm-start" >
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                <span class="text-dark ms-1 d-none d-sm-inline ps-1">Students</span></a>
-                        </li>
-                        <li  class="width_100prs text-sm-start" >
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <i class="fa fa-money" aria-hidden="true"></i> 
-                                <span class="text-dark ms-1 d-none d-sm-inline ps-2">Payment</span>
-                            </a>
-                        </li>
-                        <li class="width_100prs text-sm-start" >
-                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fa fa-flag" aria-hidden="true"></i> 
-                                <span class="text-dark ms-1 d-none d-sm-inline ps-2">Report</span>
-                            </a>
-                        </li>
-                        <li class="width_100prs text-sm-start" >
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fa fa-cogs" aria-hidden="true"></i> 
-                                <span class="text-dark ms-1 d-none d-sm-inline ps-2">Settings</span> </a>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="dropdown pb-4">
-                        <a href="#" class="nav-link px-0 align-middle">
-                            <span class="ms-1 d-none d-sm-inline ps-2">Logout</span> 
-                            <i class="fa fa-sign-out pl-1" aria-hidden="true"></i> 
-                        </a>
-                            
-                    </div>
-                </div>
-            </div>
+    
+        <div class="row flex-nowrap    vh-100">
+            <?php include 'sidebar.php' ?>
             <div class="col py-1 " style="background-color: #E5E5E5;"> 
                 <div class="our-webcoderskull padding-lg">
-                    <nav class="navbar navbar-expand-lg bg-white row-1">
-                        <a class="navbar-brand" href="#"
-                          ><img class="width_23" src="./img/back.png" alt=""
-                        /></a>
-                        <button
-                          class="navbar-toggler"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#navbarSupportedContent"
-                          aria-controls="navbarSupportedContent"
-                          aria-expanded="false"
-                          aria-label="Toggle navigation"
-                        >
-                        <span> <i class="fa fa-bars color_blue" aria-hidden="true"></i></span>
-                        </button>
-                
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <div class="navbar-nav mr-auto"></div>
-                          <form class="form-inline my-2 my-lg-0">
-                            <input
-                              class="form-control mr-sm-2"
-                              type="search"
-                              placeholder="Search"
-                              aria-label="Search"
-                            />
-                            <i class="fa fa-search color_green width_23  position-absolute " style="right: 44px;"  aria-hidden="true"></i>
-                            
-                            <i class="fa fa-bell-o color_green"  aria-hidden="true"></i>
-                          </form>
-                        </div>
-                    </nav>
-                    <div class="d-flex justify-content-between pb-2 border-bottom">
+                    <?php include 'nav.php' ?>
+                    <div>
+                    <div class="d-flex justify-content-between flex-wrap pb-2 px-3 border-bottom ">
                         <h2>Payment details</h2>
-                        <div class="d-flex align-items-center" style="width: 80px;" >
+                        <div class="d-flex align-items-center" >
                             <i class=" fa fa-sort Primary color_blue mr-2" aria-hidden="true"></i>
+                            <button class="btn_signin border-0 rounded h-100 w-100 px-1 text-white">Add new student</button>
                         </div>
                     </div>
-                    <div class="">
+                    <div class="table-responsive">
                       <table class="table overflow-hidden container" >
                         
                         <thead class=" w-100">
@@ -211,17 +126,19 @@
                             </td>
                         </tr>
                     </table>
+                    </div>
                   </div>
                 </div>
             </div>
         </div>
-    </div>
+   
 
     
-    <script src="./bootstrap static/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./bootstrap static/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

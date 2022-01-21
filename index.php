@@ -36,7 +36,7 @@
               <input type="checkbox" class="form-check-input " id="exampleCheck1">
               <label class="form-check-label fw-bold text-muted ml-3" for="exampleCheck1">Remember Me</label>
             </div>
-            <a  class="btn w-100 btn_signin text-white" href="dashboard.html"  >SIGN IN</a>
+            <a  class="btn w-100 btn_signin text-white" href="./dashboard.php"  >SIGN IN</a>
             <p class="mt-3 text-center">Forgot your password? <a href="">Reset Password</a></p>
           </form>
        </section>
