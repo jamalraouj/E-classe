@@ -14,7 +14,7 @@
       <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-75 "
           id="menu">
           <li class="nav-item width_100prs text-sm-start">
-              <a href="./index.php" class="nav-link align-middle px-0">
+              <a href="./dashboard.php" class="nav-link align-middle px-0">
                   <i class="fa fa-home" aria-hidden="true"></i>
                   <span class="text-dark ms-1 d-none d-sm-inline ps-2 ">Home</span>
               </a>

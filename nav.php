@@ -9,7 +9,7 @@
       
       
   </div>
-  
+                
   <button
     class="navbar-toggler"
     type="button"
@@ -23,15 +23,16 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <div class="navbar-nav mr-auto"></div>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline my-2 my-lg-0 ">
+    <div class=" position-relative">
       <input
         class="form-control mr-sm-2"
         type="search"
         placeholder="Search"
         aria-label="Search"
-      />
-      <i class="fa fa-search color_green width_23  position-absolute " style="right: 44px;"  aria-hidden="true"></i>
-     
+     />
+      <i class="fa fa-search color_green width_23  position-absolute " style="right: 9px; top: 10px;"  aria-hidden="true"></i>
+    </div>  
       <i class="fa fa-bell-o color_green"  aria-hidden="true"></i>
     </form>
   </div>

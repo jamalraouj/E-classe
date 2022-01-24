@@ -1,3 +1,101 @@
+
+<?php
+  $array_student =array(
+
+     array(
+       'name'=> 'jamal',
+       'lname' =>'raouj',
+       'email'=>'jamalrwj@gmail.com',
+        'phone'=>'0463728464',
+         'number'=> '64738291',
+         'date'=> '08/Dec,21'
+    )
+    ,
+   array(
+      'name'=> 'abdesamad',
+      'lname' =>'soiri',
+      'email'=>'abdesamad@gmail.com',
+       'phone'=>'0643542785',
+        'number' =>'984563',
+       'date' => '08/Jun,2021'
+   )
+   ,
+   array(
+     
+    'name'=> 'jalil',
+    'lname' =>'nadir',
+    'email'=>'jalil@gmail.com',
+     'phone'=>'0463284642',
+      'number' =>'647382912',
+     'date' => '08/Dec,212'
+ )
+ ,
+ array(
+    'name'=> 'abdeslam',
+    'lname' =>'el boukri',
+    'email'=>'abdesslam-elboukri@gmail.com',
+     'phone'=>'04637284642',
+      'number' =>'647382912',
+     'date' => '08/Dec,212'
+ )
+ ,
+  array(
+    'name'=> 'mohammed',
+    'lname' =>'maitit',
+    'email'=>'mohammed@gmail.com',
+     'phone'=>'04637284642',
+      'number' =>'647382912',
+     'date' => '08/Dec,212'
+  ),
+  array(
+    'name'=> 'jamal',
+    'lname' =>'raouj',
+    'email'=>'jamalrwj@gmail.com',
+     'phone'=>'0463728464',
+      'number'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+ ,
+array(
+   'name'=> 'abdesamad',
+   'lname' =>'soiri',
+   'email'=>'abdesamad@gmail.com',
+    'phone'=>'0643542785',
+     'number' =>'984563',
+    'date' => '08/Jun,2021'
+)
+,
+array(
+  
+ 'name'=> 'jalil',
+ 'lname' =>'nadir',
+ 'email'=>'jalil@gmail.com',
+  'phone'=>'0463284642',
+   'number' =>'647382912',
+  'date' => '08/Dec,212'
+)
+,
+array(
+ 'name'=> 'abdeslam',
+ 'lname' =>'el boukri',
+ 'email'=>'abdesslam-elboukri@gmail.com',
+  'phone'=>'04637284642',
+   'number' =>'647382912',
+  'date' => '08/Dec,212'
+)
+,
+array(
+ 'name'=> 'mohammed',
+ 'lname' =>'maitit',
+ 'email'=>'mohammed@gmail.com',
+  'phone'=>'04637284642',
+   'number' =>'647382912',
+  'date' => '08/Dec,212'
+)
+);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,9 +109,9 @@
     <title>Student</title>
 </head>
 
-<body class=" p-0 "> 
-   
-        <div class="row flex-nowrap vh-100 ">
+<body class=""> 
+    
+        <div class="row flex-nowrap  ">
             <!-- col-auto col-md-3 col-xl-2 px-sm-2 px-0 w-25 -->
             <?php include 'sidebar.php' ; ?>
             <div class=" col p-0 vh-100" style="background-color: #E5E5E5;"> 
@@ -45,199 +143,14 @@
                             </thead>
                         <!-- ____________ -->
                          <tbody>
+                             <?php foreach($array_student as $lang) :?>
                             <tr class="height_70 bg-white mb-2 flex-wrap">
                                 <td scope="row"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="height_70 bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="height_70  bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="height_70  bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </div>
-                            <tr class="height_70  bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="height_70  bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="height_70  bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </tr>
-
-
-                            <!-- ____________ -->
-                            <tr class="height_70  bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr class="height_70  bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="height_70  bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="height_70  bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="height_70  bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="height_70  bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
-                                <td class="align-middle  ">
-                                    <div class="w-100  d-flex align-items-center justify-content-around">
-                                    <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
-                                    <i class="fa fa-trash color_blue" aria-hidden="true"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="height_70  bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><img src="./img/students.png" alt=""></td>
-                                <td class="align-middle">jamal</td>
-                                <td class="align-middle">jamalrwj@gmail.com</td>
-                                <td class="align-middle">0463728464</td>
-                                <td class="align-middle">64738291</td>
-                                <td class="align-middle">08/Dec,21</td>
+                                <td class="align-middle"><?php echo $lang['name']; ?></td>
+                                <td class="align-middle"><?php echo $lang['email'];?></td>
+                                <td class="align-middle"><?php echo $lang['phone'];?></td>
+                                <td class="align-middle"><?php echo $lang['number'];?></td>
+                                <td class="align-middle"><?php echo $lang['date'];?></td>
                                 <td class="align-middle  ">
                                     <div class="w-100  d-flex align-items-center justify-content-around">
                                     <i class="fa fa-pencil color_blue" aria-hidden="true"></i>
@@ -246,6 +159,7 @@
                                 </td>
                             </tr>
                             
+                            <?php   endforeach ?>
 
                             
                         </tbody>

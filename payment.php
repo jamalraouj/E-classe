@@ -1,3 +1,174 @@
+
+<?php
+  $array_payment =array(
+
+    array(
+        'lname' =>'raouj',
+        'Payement-schedule'=>'First',
+         'bill-number'=>'00012223',
+         'amount-paid'=> '64738291',
+          'balance-amount'=> '64738291',
+          'date'=> '08/Dec,21'
+     )
+     ,
+     array(
+        'lname' =>'elbokri',
+        'Payement-schedule'=>'First',
+         'bill-number'=>'00012223',
+         'amount-paid'=> '64738291',
+          'balance-amount'=> '64738291',
+          'date'=> '08/Dec,21'
+     )
+     ,
+     array(
+        'lname' =>'nadir',
+        'Payement-schedule'=>'First',
+         'bill-number'=>'00012223',
+         'amount-paid'=> '64738291',
+          'balance-amount'=> '64738291',
+          'date'=> '08/Dec,21'
+     )
+     ,
+     array(
+        'lname' =>'nqar',
+        'Payement-schedule'=>'First',
+         'bill-number'=>'00012223',
+         'amount-paid'=> '64738291',
+          'balance-amount'=> '64738291',
+          'date'=> '08/Dec,21'
+     )
+     ,
+     array(
+        'lname' =>'assadiq',
+        'Payement-schedule'=>'First',
+         'bill-number'=>'00012223',
+         'amount-paid'=> '64738291',
+          'balance-amount'=> '64738291',
+          'date'=> '08/Dec,21'
+     )
+     ,
+     array(
+        'lname' =>'raouj',
+        'Payement-schedule'=>'First',
+         'bill-number'=>'00012223',
+         'amount-paid'=> '64738291',
+          'balance-amount'=> '64738291',
+          'date'=> '08/Dec,21'
+     )
+,
+array(
+    'lname' =>'raouj',
+    'Payement-schedule'=>'First',
+     'bill-number'=>'00012223',
+     'amount-paid'=> '64738291',
+      'balance-amount'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+ ,
+ array(
+    'lname' =>'elbokri',
+    'Payement-schedule'=>'First',
+     'bill-number'=>'00012223',
+     'amount-paid'=> '64738291',
+      'balance-amount'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+ ,
+ array(
+    'lname' =>'nadir',
+    'Payement-schedule'=>'First',
+     'bill-number'=>'00012223',
+     'amount-paid'=> '64738291',
+      'balance-amount'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+ ,
+ array(
+    'lname' =>'nqar',
+    'Payement-schedule'=>'First',
+     'bill-number'=>'00012223',
+     'amount-paid'=> '64738291',
+      'balance-amount'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+ ,
+ array(
+    'lname' =>'assadiq',
+    'Payement-schedule'=>'First',
+     'bill-number'=>'00012223',
+     'amount-paid'=> '64738291',
+      'balance-amount'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+ ,
+ array(
+    'lname' =>'raouj',
+    'Payement-schedule'=>'First',
+     'bill-number'=>'00012223',
+     'amount-paid'=> '64738291',
+      'balance-amount'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+,
+array(
+    'lname' =>'raouj',
+    'Payement-schedule'=>'First',
+     'bill-number'=>'00012223',
+     'amount-paid'=> '64738291',
+      'balance-amount'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+ ,
+ array(
+    'lname' =>'elbokri',
+    'Payement-schedule'=>'First',
+     'bill-number'=>'00012223',
+     'amount-paid'=> '64738291',
+      'balance-amount'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+ ,
+ array(
+    'lname' =>'nadir',
+    'Payement-schedule'=>'First',
+     'bill-number'=>'00012223',
+     'amount-paid'=> '64738291',
+      'balance-amount'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+ ,
+ array(
+    'lname' =>'nqar',
+    'Payement-schedule'=>'First',
+     'bill-number'=>'00012223',
+     'amount-paid'=> '64738291',
+      'balance-amount'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+ ,
+ array(
+    'lname' =>'assadiq',
+    'Payement-schedule'=>'First',
+     'bill-number'=>'00012223',
+     'amount-paid'=> '64738291',
+      'balance-amount'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+ ,
+ array(
+    'lname' =>'raouj',
+    'Payement-schedule'=>'First',
+     'bill-number'=>'00012223',
+     'amount-paid'=> '64738291',
+      'balance-amount'=> '64738291',
+      'date'=> '08/Dec,21'
+ )
+
+);
+ 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +184,7 @@
 
 <body>
     
-        <div class="row flex-nowrap    vh-100">
+        <div class="row flex-nowrap  ">
             <?php include 'sidebar.php' ?>
             <div class="col py-1 " style="background-color: #E5E5E5;"> 
                 <div class="our-webcoderskull padding-lg">
@@ -26,8 +197,8 @@
                             <button class="btn_signin border-0 rounded h-100 w-100 px-1 text-white">Add new student</button>
                         </div>
                     </div>
-                    <div class="table-responsive">
-                      <table class="table overflow-hidden container" >
+                    <div class="table-responsive px-sm-3 overflow-scroll scroll_wdout_bar height_dash ">
+                      <table class="table" >
                         
                         <thead class=" w-100">
                             <!-- <img src="./img/students.png invisible" alt=""> -->
@@ -41,90 +212,20 @@
                             </tr>
                         </thead>
                         <!-- ____________ height_70 d-flex justify-content-between align-items-center bg-white mb-2 flex-wrap ml-3 pl-1-->
-                        <tr class="height_70 bg-white" >
-                            
-                            <td>karthi</td>
-                            <td>First</td>
-                            <td>00012223</td>
-                            <td><span>DHS </span>100000</td>
-                            <td><span>DHS </span>500000</td>
-                            <td>05-jan,2022</td>
-                            <td class="width_60 d-flex justify-content-lg-around">
+                        <?php foreach($array_payment as $lang) :?>
+                            <tr class="height_70 bg-white mb-2 flex-wrap">
+                                <td class="align-middle"><?php echo $lang['lname']; ?></td>
+                                <td class="align-middle"><?php echo $lang['Payement-schedule'];?></td>
+                                <td class="align-middle"><?php echo $lang['bill-number'];?></td>
+                                <td class="align-middle"><?php echo "<span>DHS </span>". $lang['amount-paid'];?></td>
+                                <td class="align-middle"><?php echo "<span>DHS </span>". $lang['balance-amount'];?></td>
+                                <td class="align-middle"><?php echo $lang['date'];?></td>
+                                <td class="width_60 d-flex justify-content-lg-around">
                                 <i class="fa fa-eye  color_blue" aria-hidden="true"></i>
-                            </td>
-                        </tr>
-                        <tr class="height_70 bg-white" >
-                            
-                            <td>karthi</td>
-                            <td>First</td>
-                            <td>00012223</td>
-                            <td><span>DHS </span>100000</td>
-                            <td><span>DHS </span>500000</td>
-                            <td>05-jan,2022</p>
-                            <td class="width_60 d-flex justify-content-lg-around">
-                                <i class="fa fa-eye  color_blue" aria-hidden="true"></i>
-                            </td>
-                        </tr>
-                        <tr class="height_70 bg-white" >
-                            
-                            <td>karthi</td>
-                            <td>First</td>
-                            <td>00012223</td>
-                            <td><span>DHS </span>100000</td>
-                            <td><span>DHS </span>500000</td>
-                            <td>05-jan,2022</td>
-                            <td class="width_60 d-flex justify-content-lg-around">
-                                <i class="fa fa-eye  color_blue" aria-hidden="true"></i>
-                            </td>
-                        </tr>
-                        <tr class="height_70 bg-white" >
-                            
-                            <td>karthi</td>
-                            <td>First</td>
-                            <td>00012223</td>
-                            <td><span>DHS </span>100000</td>
-                            <td><span>DHS </span>500000</td>
-                            <td>05-jan,2022</td>
-                            <td class="width_60 d-flex justify-content-lg-around">
-                                <i class="fa fa-eye  color_blue" aria-hidden="true"></i>
-                            </td>
-                        </tr>
-                        <tr class="height_70 bg-white " >
-                            
-                            <td>karthi</td>
-                            <td>First</td>
-                            <td>00012223</td>
-                            <td><span>DHS </span>100000</td>
-                            <td><span>DHS </span>500000</td>
-                            <td>05-jan,2022</td>
-                            <td class="width_60 d-flex justify-content-lg-around">
-                                <i class="fa fa-eye  color_blue" aria-hidden="true"></i>
-                            </td>
-                        </tr>
-                        <tr class="height_70 bg-white" >
-                            
-                            <td>karthi</td>
-                            <td>First</td>
-                            <td>00012223</td>
-                            <td><span>DHS </span>100000</td>
-                            <td><span>DHS </span>500000</td>
-                            <td>05-jan,2022</td>
-                            <td class="width_60 d-flex justify-content-lg-around">
-                                <i class="fa fa-eye  color_blue" aria-hidden="true"></i>
-                            </td>
-                        </tr>
-                        <tr class="height_70 bg-white" >
-                            
-                            <td>karthi</td>
-                            <td>First</td>
-                            <td>00012223</td>
-                            <td><span>DHS </span>100000</td>
-                            <td><span>DHS </span>500000</td>
-                            <td>05-jan,2022</td>
-                            <td class="width_60 d-flex justify-content-lg-around">
-                                <i class="fa fa-eye  color_blue" aria-hidden="true"></i>
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
+                            <?php endforeach ?>
+                        
                     </table>
                     </div>
                   </div>
