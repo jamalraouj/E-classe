@@ -1,171 +1,8 @@
 
 <?php
-  $array_payment =array(
 
-    array(
-        'lname' =>'raouj',
-        'Payement-schedule'=>'First',
-         'bill-number'=>'00012223',
-         'amount-paid'=> '64738291',
-          'balance-amount'=> '64738291',
-          'date'=> '08/Dec,21'
-     )
-     ,
-     array(
-        'lname' =>'elbokri',
-        'Payement-schedule'=>'First',
-         'bill-number'=>'00012223',
-         'amount-paid'=> '64738291',
-          'balance-amount'=> '64738291',
-          'date'=> '08/Dec,21'
-     )
-     ,
-     array(
-        'lname' =>'nadir',
-        'Payement-schedule'=>'First',
-         'bill-number'=>'00012223',
-         'amount-paid'=> '64738291',
-          'balance-amount'=> '64738291',
-          'date'=> '08/Dec,21'
-     )
-     ,
-     array(
-        'lname' =>'nqar',
-        'Payement-schedule'=>'First',
-         'bill-number'=>'00012223',
-         'amount-paid'=> '64738291',
-          'balance-amount'=> '64738291',
-          'date'=> '08/Dec,21'
-     )
-     ,
-     array(
-        'lname' =>'assadiq',
-        'Payement-schedule'=>'First',
-         'bill-number'=>'00012223',
-         'amount-paid'=> '64738291',
-          'balance-amount'=> '64738291',
-          'date'=> '08/Dec,21'
-     )
-     ,
-     array(
-        'lname' =>'raouj',
-        'Payement-schedule'=>'First',
-         'bill-number'=>'00012223',
-         'amount-paid'=> '64738291',
-          'balance-amount'=> '64738291',
-          'date'=> '08/Dec,21'
-     )
-,
-array(
-    'lname' =>'raouj',
-    'Payement-schedule'=>'First',
-     'bill-number'=>'00012223',
-     'amount-paid'=> '64738291',
-      'balance-amount'=> '64738291',
-      'date'=> '08/Dec,21'
- )
- ,
- array(
-    'lname' =>'elbokri',
-    'Payement-schedule'=>'First',
-     'bill-number'=>'00012223',
-     'amount-paid'=> '64738291',
-      'balance-amount'=> '64738291',
-      'date'=> '08/Dec,21'
- )
- ,
- array(
-    'lname' =>'nadir',
-    'Payement-schedule'=>'First',
-     'bill-number'=>'00012223',
-     'amount-paid'=> '64738291',
-      'balance-amount'=> '64738291',
-      'date'=> '08/Dec,21'
- )
- ,
- array(
-    'lname' =>'nqar',
-    'Payement-schedule'=>'First',
-     'bill-number'=>'00012223',
-     'amount-paid'=> '64738291',
-      'balance-amount'=> '64738291',
-      'date'=> '08/Dec,21'
- )
- ,
- array(
-    'lname' =>'assadiq',
-    'Payement-schedule'=>'First',
-     'bill-number'=>'00012223',
-     'amount-paid'=> '64738291',
-      'balance-amount'=> '64738291',
-      'date'=> '08/Dec,21'
- )
- ,
- array(
-    'lname' =>'raouj',
-    'Payement-schedule'=>'First',
-     'bill-number'=>'00012223',
-     'amount-paid'=> '64738291',
-      'balance-amount'=> '64738291',
-      'date'=> '08/Dec,21'
- )
-,
-array(
-    'lname' =>'raouj',
-    'Payement-schedule'=>'First',
-     'bill-number'=>'00012223',
-     'amount-paid'=> '64738291',
-      'balance-amount'=> '64738291',
-      'date'=> '08/Dec,21'
- )
- ,
- array(
-    'lname' =>'elbokri',
-    'Payement-schedule'=>'First',
-     'bill-number'=>'00012223',
-     'amount-paid'=> '64738291',
-      'balance-amount'=> '64738291',
-      'date'=> '08/Dec,21'
- )
- ,
- array(
-    'lname' =>'nadir',
-    'Payement-schedule'=>'First',
-     'bill-number'=>'00012223',
-     'amount-paid'=> '64738291',
-      'balance-amount'=> '64738291',
-      'date'=> '08/Dec,21'
- )
- ,
- array(
-    'lname' =>'nqar',
-    'Payement-schedule'=>'First',
-     'bill-number'=>'00012223',
-     'amount-paid'=> '64738291',
-      'balance-amount'=> '64738291',
-      'date'=> '08/Dec,21'
- )
- ,
- array(
-    'lname' =>'assadiq',
-    'Payement-schedule'=>'First',
-     'bill-number'=>'00012223',
-     'amount-paid'=> '64738291',
-      'balance-amount'=> '64738291',
-      'date'=> '08/Dec,21'
- )
- ,
- array(
-    'lname' =>'raouj',
-    'Payement-schedule'=>'First',
-     'bill-number'=>'00012223',
-     'amount-paid'=> '64738291',
-      'balance-amount'=> '64738291',
-      'date'=> '08/Dec,21'
- )
-
-);
- 
+ $string_payment= file_get_contents("./fils-json/payment-student.json");
+ $array_payment=json_decode($string_payment , true);
 ?>
 
 
@@ -173,12 +10,7 @@ array(
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap static/css/bootstrap.min.css ">
-    <link rel="stylesheet" href="./bootstrap static/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <?php include 'head.php'; ?>
     <title>payment</title>
 </head>
 
@@ -187,7 +19,7 @@ array(
         <div class="row flex-nowrap  ">
             <?php include 'sidebar.php' ?>
             <div class="col py-1 " style="background-color: #E5E5E5;"> 
-                <div class="our-webcoderskull padding-lg">
+                <div class="padding-lg">
                     <?php include 'nav.php' ?>
                     <div>
                     <div class="d-flex justify-content-between flex-wrap pb-2 px-3 border-bottom ">
@@ -213,9 +45,9 @@ array(
                         </thead>
                         <!-- ____________ height_70 d-flex justify-content-between align-items-center bg-white mb-2 flex-wrap ml-3 pl-1-->
                         <?php foreach($array_payment as $lang) :?>
-                            <tr class="height_70 bg-white mb-2 flex-wrap">
+                            <tr class="bg-white mb-2 flex-wrap">
                                 <td class="align-middle"><?php echo $lang['lname']; ?></td>
-                                <td class="align-middle"><?php echo $lang['Payement-schedule'];?></td>
+                                <td class="align-middle"><?php echo $lang['payment-schedule'];?></td>
                                 <td class="align-middle"><?php echo $lang['bill-number'];?></td>
                                 <td class="align-middle"><?php echo "<span>DHS </span>". $lang['amount-paid'];?></td>
                                 <td class="align-middle"><?php echo "<span>DHS </span>". $lang['balance-amount'];?></td>
@@ -233,13 +65,8 @@ array(
             </div>
         </div>
    
-
+        <?php include 'includejs.php'; ?>
     
-    <!-- <script src="./bootstrap static/js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
 </body>
 
 </html>

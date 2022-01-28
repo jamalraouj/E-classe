@@ -55,10 +55,8 @@
 }  
 .color_green{
     color: #C4C4C4;
-}   
-.width_100prs{
-    width:100%;
-}  
+}
+
 .width_60{
     width:60px ;
 }  
@@ -76,6 +74,16 @@
     background: rgb(86, 159, 255); 
     border-radius: 10px;
 }
+.card_sign_in .form_card .E_h3 span ,.sidebar .sidebar_eclass span{
+   
+    border-left: 6px solid #00C1FE !important;    
+}
+.height_70{
+  height:60px;
+  margin-bottom:12px !important;
+}
+
+
 
 /* ________________________ */
 

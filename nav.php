@@ -1,5 +1,4 @@
-<?php
-  echo '<nav class="navbar navbar-expand-lg  bg-white ">
+<nav class="navbar navbar-expand-lg  bg-white ">
   <div>
       <!-- data-target="#supportedsidebar"  data-toggle="collapse" aria-controls="supportedsidebar"  -->
       <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
@@ -10,7 +9,8 @@
       
   </div>
                 
-  <button
+  <a><button
+  
     class="navbar-toggler"
     type="button"
     data-toggle="collapse"
@@ -20,7 +20,7 @@
     aria-label="Toggle navigation"
   >
   <span> <i class="fa fa-bars color_blue" aria-hidden="true"></i></span>
-  </button>
+  </button></a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <div class="navbar-nav mr-auto"></div>
     <form class="form-inline my-2 my-lg-0 ">
@@ -36,6 +36,4 @@
       <i class="fa fa-bell-o color_green"  aria-hidden="true"></i>
     </form>
   </div>
-</nav>';
-
-?>
+</nav>
