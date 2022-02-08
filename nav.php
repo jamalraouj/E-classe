@@ -19,7 +19,7 @@
     aria-expanded="false"
     aria-label="Toggle navigation"
   >
-  <span> <i class="fa fa-bars color_blue" aria-hidden="true"></i></span>
+  <!-- <span> <i class="fa fa-bars color_blue" aria-hidden="true"></i></span> -->
   </button></a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <div class="navbar-nav mr-auto"></div>

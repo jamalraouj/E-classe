@@ -16,7 +16,7 @@
 
 <body>
     
-        <div class="row flex-nowrap  ">
+        <div class="vh-100 row flex-nowrap  ">
             <?php include 'sidebar.php' ?>
             <div class="col py-1 " style="background-color: #E5E5E5;"> 
                 <div class="padding-lg">
@@ -35,9 +35,9 @@
                         <thead class=" w-100">
                             <!-- <img src="./img/students.png invisible" alt=""> -->
                             <tr>
-                               <th scope="col">Name</th>
-                               <th scope="col">Payement schedule</th>
-                               <th scope="col">Bill Number</th>
+                               <th>Name</th>
+                               <th>Payement schedule</th>
+                               <th>Bill Number</th>
                                <th >Amount paid</th>
                                <th>Balance amount</th>
                                <th>Date</th> 

@@ -42,7 +42,7 @@
                                     <i class="fa fa-money " aria-hidden="true"></i>
                                     <p class="text-info">Payments</p>
                                 </a>
-                                <div class="p-O d-flex justify-content-end">
+                                <div class="d-flex justify-content-end">
                                     <p class="mt-3 mb-0"><span>DHS</span> 556,000</p>
                                 </div>
                             </div>
