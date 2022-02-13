@@ -35,7 +35,7 @@
                             </div>
                       </div>
                       <div class="table-responsive px-sm-3 overflow-scroll scroll_wdout_bar height_dash">
-                     <table class="dashboard_student table  " >
+                     <table class=" table  " >
                        
                             <thead >
                                 <tr>
@@ -55,7 +55,6 @@
                               while($row = mysqli_fetch_assoc($result)) {
                                   
                                   ?>
-                              
                             <tr class="height_70 mt-2 bg-white flex-wrap">
                                 <td><img src="./img/students.png" alt="profile"></td>
                                 <td class="align-middle"><?php echo $row["name"]; ?></td>

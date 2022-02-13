@@ -45,7 +45,7 @@
 }
 .form_card div input placeholder{
     font-size:4px !important;
-}
+}         
 .width_23{
     width:23px;
     height: 23px;
@@ -67,7 +67,8 @@
     left:10%;
 }
 .height_dash{
-    height:31.1rem;
+    /*height:31.1rem;*/
+    height: 80vh;
 }
 .scroll_wdout_bar::-webkit-scrollbar{
     width:7px;

@@ -74,6 +74,7 @@
                             $result = mysqli_query($conn ,$update );
                             
                           header('location:student.php');
+                          
                         }
 
                             mysqli_close($conn);

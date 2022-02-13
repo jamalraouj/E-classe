@@ -17,7 +17,7 @@
               </a>
           </li>
           <li class="nav-item  w-100 ">
-              <a href="./dashboard.php" data-bs-toggle="" class="nav-link px-0 align-middle text-dark">
+              <a href="./courses.php" data-bs-toggle="" class="nav-link px-0 align-middle text-dark">
                   <i class="fa fa-bookmark-o" aria-hidden="true"></i>
                   <span class=" ms-1 d-none d-sm-inline ps-3">Course</span>
               </a>
