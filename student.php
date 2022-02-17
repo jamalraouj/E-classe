@@ -1,11 +1,14 @@
 <?php
+    session_start();
+    if (!isset($_SESSION['email'])) {
+        header('location:index.php');
+}
 
-    // $string_students = file_get_contents("./fils-json/data-students.json");
+// $string_students = file_get_contents("./fils-json/data-students.json");
     // $array_students = json_decode($string_students, true);
     include './crud-mysql/read-database.php' ;
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">

@@ -1,4 +1,9 @@
-
+<?php
+    session_start();
+    if(!isset($_SESSION['email'])){
+        header('location:index.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +38,7 @@
                         </div>
                         <div class="form-group">
                             <label for="enroll_number">Enroll number</label>
-                            <input type="number" class="form-control" name="enroll_number" id="enroll_number">
+                            <input  type="number" class="form-control" name="enroll_number" id="enroll_number">
                         </div>
                         <div class="form-group">
                             <label for="date">Date</label>

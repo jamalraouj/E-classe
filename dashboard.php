@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(!$_SESSION['email']){
+
+        header('location:index.php');
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +16,8 @@
 
 <body>
    <?php include_once './crud-mysql/db-conn.php'; ?>
-   <?php 
+   <?php
+
         //student
         $num_std = "SELECT COUNT(id) AS numberStudent FROM table_student" ;
         $sql = mysqli_query($conn , $num_std);
@@ -27,9 +36,6 @@
           $sql_admin = "SELECT COUNT(id) from admin";
           $sql_ad_obj = mysqli_query($conn , $sql_admin);
           $sql_array = mysqli_fetch_array($sql_ad_obj);
-          
-
-
         ?>
 
         <div class="row flex-nowrap vh-100">
@@ -90,7 +96,16 @@
                 </div>
             </div>
         </div>
-        <?php include 'includejs.php'; ?>
+        <?php include 'includejs.php';
+//        if(isset($_COOKIE['email'])) {
+//            echo $_COOKIE['email'];
+//        }
+//        if(isset($_COOKIE['pass'])) {
+//            echo $_COOKIE['pass'];
+//        }
+        //session_start();
+
+        ?>
         <?php mysqli_close($conn); ?>
 </body>
 

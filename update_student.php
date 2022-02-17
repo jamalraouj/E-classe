@@ -1,4 +1,9 @@
-
+<?php
+    session_start();
+    if(!isset($_SESSION['email'])){
+        header('location:index.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,13 +79,9 @@
                             $result = mysqli_query($conn ,$update );
                             
                           header('location:student.php');
-                          
                         }
 
                             mysqli_close($conn);
-
-                            
-
       }
                     ?>
                 </div>

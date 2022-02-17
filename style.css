@@ -51,7 +51,10 @@
     background-color:#00C1FE !important;
 
 }
-
+.logout{
+    background: transparent !important;
+    border: none !important;
+}
 /* ________________________ */
 
 

@@ -8,7 +8,11 @@
     text-decoration:none!important;
     Font-family: Montserrat;
 }
-
+ .logout{
+     background: red !important;
+     border: none !important;
+     padding: 10px 20px;
+ }
  .page_sign_in{
     background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%); 
 }

@@ -1,5 +1,10 @@
 <?php
- include './crud-mysql/db-conn.php';
+    session_start();
+    if (!isset($_SESSION['email'])) {
+        header('location:index.php');
+    }
+
+include './crud-mysql/db-conn.php';
 
  $sql_str_crs = "SELECT * FROM `table_course`";
  $crs_obj = mysqli_query( $conn, $sql_str_crs);

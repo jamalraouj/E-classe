@@ -1,3 +1,8 @@
+<?php
+//if(!isset($_SESSION['email'])){
+//    header('location:index.php');
+//}
+?>
 <nav class="navbar navbar-expand-lg  bg-white ">
   <div>
       <!-- data-target="#supportedsidebar"  data-toggle="collapse" aria-controls="supportedsidebar"  -->

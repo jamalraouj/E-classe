@@ -1,4 +1,9 @@
-
+<?php
+    session_start();
+    if(!isset($_SESSION['email'])){
+        header('location:index.php');
+}
+?>
 <?php
  include './crud-mysql/db-conn.php';
 
