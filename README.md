@@ -15,6 +15,6 @@ You can try our site, we will be happy about that.
                     Email :ahmad@gmail.com
                     Password :ahmad
 
-        http://e-classeup.42web.io/index.php
+http://e-classeup.42web.io/index.php
 
 Thank you so much and I wish you a good day.
