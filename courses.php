@@ -42,33 +42,33 @@ include './crud-mysql/db-conn.php';
                 
                     <div class="table-responsive overflow-scroll scroll_wdout_bar px-sm-3 height_dash ">
 
-                      <table class="table " >
+                      <table class="container-fluid table " >
                         
                         <thead class=" w-100">
                             <!-- <img src="./img/students.png invisible" alt=""> -->
                             <tr>
-                               <th>Title</th>
-                               <th>F/S</th>
-                               <th>Type</th>
-                               <th >Hours</th>
-                               <th>Price</th>
-                               <th>Last Update</th> 
-                               <th>Description</th> 
+                               <th class="col-1">Title</th>
+                               <th class="col-1">F/S</th>
+                               <th class="col-2">Type</th>
+                               <th class="col-1">Hours</th>
+                               <th class="col-2">Price</th>
+                               <th class="col-2">Last Update</th>
+                               <th class="col-2">Description</th>
                                
                             </tr>
                         </thead>
                         <tbody>
                         <?php while($row = mysqli_fetch_assoc($crs_obj)) {?>
                             <tr class="bg-white mb-2 flex-wrap">
-                                <td class="align-middle"><?php echo $row['title']; ?></td>
-                                <td class="align-middle"><?php echo $row['F/S'];?></td>
-                                <td class="align-middle"><?php echo $row['type'];?></td>
-                                <td class="align-middle"><?php echo "<span>DHS </span>". $row['hours'];?></td>
-                                <td class="align-middle"><?php echo "<span>DHS </span>". $row['price'];?></td>
-                                <td class="align-middle"><?php echo $row['lastupdate'];?></td>
-                                <td class="align-middle"><?php echo $row['description'];?></td>
+                                <td class="align-middle table_size"><?php echo $row['title']; ?></td>
+                                <td class="align-middle table_size"><?php echo $row['F/S'];?></td>
+                                <td class="align-middle table_size"><?php echo $row['type'];?></td>
+                                <td class="align-middle table_size"><?php echo $row['hours'];?></td>
+                                <td class="align-middle table_size"><?php echo "DHS ". $row['price'];?></td>
+                                <td class="align-middle table_size"><?php echo $row['lastupdate'];?></td>
+                                <td class="align-middle table_size"><?php echo $row['description'];?></td>
                                 <td class="width_60 d-flex justify-content-lg-around">
-                                <i class="fa fa-eye  color_blue" aria-hidden="true"></i>
+                                <i class=" fa fa-eye  color_blue" aria-hidden="true"></i>
                                 </td>
                             </tr>
                             <?php } ?>

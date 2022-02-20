@@ -22,6 +22,7 @@
                     </div>
                     <?php
                     include_once './crud-mysql/db-conn.php';
+                    global $conn;
                     $id = $_GET['id'];
                     echo $id; 
                     $str_Sql= "SELECT `id`, `img`, `name`, `email`, `phone`, `enroll_number`, `date_of_admission` FROM `table_student` WHERE id = $id";

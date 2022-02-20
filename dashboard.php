@@ -15,7 +15,7 @@
 </head>
 
 <body>
-   <?php include_once './crud-mysql/db-conn.php'; ?>
+   <?php include_once './crud-mysql/db-conn.php'; global $conn;?>
    <?php
 
         //student
@@ -32,10 +32,12 @@
         $sql_course = "SELECT COUNT(id) from table_course";
         $sql_obj = mysqli_query($conn , $sql_course);
         $data_array = mysqli_fetch_array($sql_obj);
-        // admin
-          $sql_admin = "SELECT COUNT(id) from admin";
-          $sql_ad_obj = mysqli_query($conn , $sql_admin);
+
+        // users
+          $sql_users = "SELECT COUNT(id) from users";
+          $sql_ad_obj = mysqli_query($conn , $sql_users);
           $sql_array = mysqli_fetch_array($sql_ad_obj);
+
         ?>
 
         <div class="row flex-nowrap vh-100">
@@ -87,7 +89,7 @@
                                     <p class="text-info">Users</p>
                                 </div>
                                 <div class="d-flex justify-content-end">
-                                    <p class="mt-3 mb-0 "><?php echo $sql_array[0] + $data_assoc[0]; ?></p>
+                                    <p class="mt-3 mb-0 "><?php echo $sql_array[0]?></p>
                                 </div>
                             </div>
                         </li>

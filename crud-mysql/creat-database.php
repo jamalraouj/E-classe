@@ -1,6 +1,7 @@
 
 <?php 
   include 'db-conn.php';
+global $conn;
 
   if(isset($_POST['submit'])){
     $img = $_POST['img'];

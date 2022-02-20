@@ -90,7 +90,15 @@
   margin-bottom:12px !important;
 }
 
-
+ .table_size{
+     font-size: 14px !important;
+     color: #1C1D1F ;
+ }
+ @media only screen and (min-width: 700px) {
+     .table_size{
+         font-size: 26px!important;
+     }
+ }
 
 /* ________________________ */
 

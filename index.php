@@ -1,3 +1,10 @@
+<?php
+    session_start();
+if(isset($_SESSION['email'])){
+    header('location:dashboard.php');
+}
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,9 +16,6 @@
   <body>
     <?php
     include './crud-mysql/db-conn.php';
-    $ac_index = 'index.php';
-    $pass='';
-    $email='';
 
     ?>
     <main class="page_sign_in d-flex justify-content-center align-items-center vh-100">
@@ -57,22 +61,21 @@ include './crud-mysql/db-conn.php';
         $emails = $_POST['email'];
         $passr = $_POST['pass'];
         if($emails && $passr){
-//      start  Validate form
+    //      start  Validate form
+            $email= test_input($emails);
+            $pass= test_input($passr);
 
-        $email= test_input($emails);
-        $pass= test_input($passr);
-//        $row = select_users($email);
-//        print_r($row);
+    //        $row = select_users($email);
+    //        print_r($row);
         try{
             $row = select_users($email);
-           if($pass == $row['password']){
+             if($pass == $row['password']){
                $name= $row['name'];
-               session_start();
                 $_SESSION['name'] = $name;
                 $_SESSION['email'] = $email;
                 $_SESSION['pass'] = $pass;
 
-               if(isset($_POST['remember'])){
+               if(isset($_POST['remember'])){// if remember = on
                     setcookie('email' , $email ,time()+(3600*24),"/");//strtotime
                     setcookie('pass' , $pass , time()+(3600*24) ,"/");
                }
@@ -83,13 +86,15 @@ include './crud-mysql/db-conn.php';
             echo 'error :'.$e->getMessage();
         }
 
-    }  }
+    }
+    }
+
     function test_input($data) {
-        $data = trim($data);// || trim( $data=>tat7yd l spaces , text ila bi delete )
+        $data = trim($data);// || trim( $data=>delete spaces , text delete )
         $data = stripslashes($data);//delete back slash
-        $data = htmlspecialchars($data);//tat5li text 3adi wkha ikon code html
+        $data = htmlspecialchars($data);//read
         //var_dump($data);
-        return $data;//r eturn string containes email and pass and all use function test_input();
+        return $data;//r eturn string containes email or pass and all use function test_input();
 
 }
     function select_users($var_email){
