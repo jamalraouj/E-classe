@@ -4,9 +4,7 @@
         header('location:index.php');
 }
 
-// $string_students = file_get_contents("./fils-json/data-students.json");
-    // $array_students = json_decode($string_students, true);
-    include './crud-mysql/read-database.php' ;
+    include './crud-mysql/read-student.php' ;
 
 ?>
 
@@ -15,7 +13,7 @@
 
 <head>
     <?php include 'head.php'; 
-    //include './crud-mysql/read-database.php';
+    //include './crud-mysql/read-student.php';
     ?> 
     <title>Student</title>
 </head>
@@ -55,8 +53,8 @@
                          <tbody>
                          <?php 
                          if(mysqli_num_rows($result)>0){
-                              while($row = mysqli_fetch_assoc($result)) {
-                                  
+                                  foreach ($result as $row){
+
                                   ?>
                             <tr class="height_70 mt-2 bg-white flex-wrap">
                                 <td><img src="./img/students.png" alt="profile"></td>
@@ -65,15 +63,16 @@
                                 <td class="align-middle"><?php echo $row["phone"];?></td>
                                 <td class="align-middle"><?php echo $row["enroll_number"];?></td>
                                 <td class="align-middle"><?php echo $row["date_of_admission"];?></td>
+
                                 <td class="align-middle">
                                     <div class="w-100 d-flex align-items-center justify-content-around">
                                        <a href="./update_student.php?id=<?php echo $row['id'];?>"> <i class="fa fa-pencil color_blue " aria-hidden="true"></i></a>
-                                       <a href="./crud-mysql/delete-database.php?id=<?php echo $row['id'];?>" >  <i class="fa fa-trash color_blue pl-3" aria-hidden="true"></i></a>
+                                       <a href="crud-mysql/delete-student.php?id=<?php echo $row['id'];?>" >  <i class="fa fa-trash color_blue pl-3" aria-hidden="true"></i></a>
                                     </div>
                                 </td>
                             </tr>
                              
-                         <?php }  
+                         <?php  }
                          } mysqli_close($conn); ?>
 
                         </tbody>

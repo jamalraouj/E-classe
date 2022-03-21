@@ -14,7 +14,6 @@
  //var_dump($sql_str_pym);
  $pym_obj = mysqli_query( $conn, $sql_str_pym);
 
- 
 ?>
 
 
@@ -27,8 +26,7 @@
 </head>
 
 <body>
-    
-        <div class="vh-100 row flex-nowrap  ">
+     <div class="vh-100 row flex-nowrap  ">
             <?php include 'sidebar.php' ?>
             <div class="col py-1 " style="background-color: #E5E5E5;"> 
                 <div class="padding-lg">

@@ -24,9 +24,7 @@
                     include_once './crud-mysql/db-conn.php';
                     global $conn;
                     $id = $_GET['id'];
-                    echo $id; 
                     $str_Sql= "SELECT `id`, `img`, `name`, `email`, `phone`, `enroll_number`, `date_of_admission` FROM `table_student` WHERE id = $id";
-
                     $result =mysqli_query($conn, $str_Sql);
                     $data=mysqli_fetch_assoc($result);
                     $name=$data['name'];
@@ -61,6 +59,7 @@
                             <label for="date">Date</label>
                             <input type="date" class="form-control" name="date" id="date" value="<?php echo"$date"?>">
                         </div>
+
                         <div class="form-group">
                             <input type="submit"  name="submit" class="btn btn-primary">
                         </div>
@@ -74,16 +73,18 @@
                             $phone = $_POST['phone'];
                             $enroll_number = $_POST['enroll_number'];
                             $date_of_admission = $_POST['date'];
+
                             
-                            if($name && $email && $phone && $enroll_number && $date_of_admission){
-                            $update = "UPDATE `table_student` SET `name`='$name',`email`='$email',`phone`='$phone',`enroll_number`='$enroll_number',`date_of_admission`='$date_of_admission' WHERE `id`=$id";
+                            if($name && $email && $phone && $enroll_number && $date_of_admission ){
+                            $update = "UPDATE `table_student` SET `name`='$name',`email`='$email',`phone`='$phone',`enroll_number`='$enroll_number',`date_of_admission`='$date_of_admission'  WHERE `id`=$id";
                             $result = mysqli_query($conn ,$update );
                             
                           header('location:student.php');
                         }
-
                             mysqli_close($conn);
+
       }
+
                     ?>
                 </div>
             </div>

@@ -45,12 +45,17 @@
                             <input type="date" class="form-control" name="date" id="date">
                         </div>
                         <div class="form-group">
+                            <label for="promo">Promo</label>
+                            <input type="text" class="form-control" name="promo" id="promo">
+                        </div>
+
+                        <div class="form-group">
                             <input type="submit"  name="submit" class="btn btn-primary">
                         </div>
                     </form>
                     <?php
                     
-                         include './crud-mysql/creat-database.php';
+                         include './crud-mysql/creat-student.php';
 
                     ?>
                 </div>
